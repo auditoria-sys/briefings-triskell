@@ -1,0 +1,1020 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><style>*,*::before,*::after{box-sizing:border-box}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.4 system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>Triskell · Nueva etapa</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+/* Marca Billber (pack billber): franja azul profundo, kicker amarillo, una palabra en serif.
+   El pack define un único tema claro; se fija ese aspecto con todos los colores explícitos. */
+:root{
+  color-scheme:light;
+  --accion:#0923F3;
+  --accion-hover:#272485;
+  --texto:#2C2C31;
+  --fondo:#FAFAFA;
+  --fondo-profundo:#272485;
+  --sobre-accion:#FAFAFA;
+  --acento-1:#F7FFA5;
+  --acento-2:#B764E5;
+  --tenue:#6B6B74;
+  --tenue-osc:#C9C8E8;
+  --linea:#DDDCE2;
+  --lienzo:#F1F0F4;
+  --blanco-papel:#FFFFFF;
+  --gris-punto:#D3D2DA;
+  --display:"WF Visual Sans","Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;
+  --realce:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --r:14px; --pill:999px;
+  --gutter-l:max(16px, env(safe-area-inset-left,0px));
+  --gutter-r:max(16px, env(safe-area-inset-right,0px));
+  --navh:56px;
+}
+*{box-sizing:border-box}
+html{background:var(--fondo)}
+body{margin:0;background:var(--fondo);color:var(--texto);font:16px/1.5 var(--display);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{max-width:100%;display:block}
+a{color:var(--accion);text-underline-offset:3px}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accion);outline-offset:3px}
+.dark :focus-visible{outline-color:var(--acento-1)}
+
+/* ---------- diapositiva ---------- */
+.slide{position:relative;display:flex;flex-direction:column;justify-content:flex-start;
+  padding:56px var(--gutter-r) 64px var(--gutter-l);border-bottom:1px solid var(--linea);background:var(--fondo)}
+.slide.dark{background:var(--fondo-profundo);color:var(--sobre-accion);border-bottom-color:#3a37a0}
+.in{width:100%;max-width:1240px;margin:auto;display:flex;flex-direction:column;gap:clamp(16px,2.6vh,28px);min-width:0}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--tenue);margin:0}
+.eyebrow b{color:var(--acento-2);margin-right:8px}
+.dark .eyebrow,.kicker{color:var(--acento-1)}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin:0}
+h1,h2,h3{margin:0;letter-spacing:-.02em;text-wrap:balance}
+h1{font:700 clamp(34px,5.4vw,76px)/1.04 var(--display);max-width:19ch}
+h2{font:700 clamp(28px,3.4vw,50px)/1.06 var(--display);max-width:26ch}
+h1 em,h2 em,.serif{font-family:var(--realce);font-style:italic;font-weight:400;letter-spacing:-.01em}
+h3{font:700 clamp(16px,1.35vw,20px)/1.25 var(--display)}
+p{margin:0;max-width:68ch}
+.lead{font-size:clamp(16px,1.35vw,20px);line-height:1.45;color:var(--tenue);max-width:60ch}
+.dark .lead{color:var(--tenue-osc)}
+.sub{color:var(--tenue)}
+.small{font-size:13px;color:var(--tenue);line-height:1.45}
+.dark .small{color:var(--tenue-osc)}
+ul.l{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px}
+ul.l li::marker{color:var(--acento-2)}
+.tab{font-variant-numeric:tabular-nums}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:var(--pill);background:var(--lienzo);color:var(--texto);white-space:nowrap}
+.chip.y{background:var(--acento-1)}
+.chip.p{background:#EFE2F8;color:#5B2C78}
+.chip.b{background:var(--fondo-profundo);color:var(--sobre-accion)}
+.chip.o{background:transparent;border:1.5px solid var(--linea);color:var(--tenue)}
+.card{background:var(--blanco-papel);border:1.5px solid var(--linea);border-radius:var(--r);padding:clamp(16px,1.6vw,24px);display:flex;flex-direction:column;gap:10px;min-width:0}
+.card.l{background:var(--lienzo);border-color:transparent}
+.dark .card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16)}
+.grid{display:grid;gap:clamp(12px,1.4vw,20px)}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.g5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.big{font:700 clamp(32px,3.6vw,56px)/1 var(--display);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.big small{font-size:.45em;letter-spacing:0;font-weight:700;margin-left:4px}
+.mid{font:700 clamp(22px,2.1vw,32px)/1.05 var(--display);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.lbl{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--tenue)}
+.dark .lbl{color:var(--tenue-osc)}
+.destacado{background:var(--lienzo);border-left:8px solid var(--acento-2);border-radius:var(--r);padding:clamp(16px,1.8vw,26px) clamp(18px,2vw,30px);display:flex;flex-direction:column;gap:8px}
+.fmtbox{background:var(--acento-1);border-radius:var(--r);padding:clamp(14px,1.6vw,22px) clamp(18px,2vw,28px)}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+
+/* ---------- portada ---------- */
+#portada .in{gap:clamp(22px,4vh,40px)}
+.agenda{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border-top:1px solid rgba(255,255,255,.22);margin-top:clamp(8px,3vh,32px)}
+.agenda div{padding:16px 16px 0 0;font-size:14px;line-height:1.35;color:var(--tenue-osc)}
+.agenda b{display:block;font:400 italic 30px/1 var(--realce);color:var(--acento-1);margin-bottom:6px}
+.hint{font-size:12.5px;color:var(--tenue-osc)}
+.hint kbd{font:700 11px/1 var(--display);border:1px solid rgba(255,255,255,.35);border-radius:5px;padding:3px 6px;margin:0 2px}
+
+/* ---------- línea de tiempo ---------- */
+.tl{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));position:relative}
+.tl::before{content:"";position:absolute;left:0;right:0;top:9px;height:3px;background:var(--linea);border-radius:3px}
+.tl li{position:relative;padding:32px 14px 0 0;display:flex;flex-direction:column;gap:6px}
+.tl li::before{content:"";position:absolute;top:0;left:0;width:21px;height:21px;border-radius:50%;background:var(--blanco-papel);border:3px solid var(--fondo-profundo)}
+.tl li.hoy::before{background:var(--acento-1);border-color:var(--fondo-profundo);box-shadow:0 0 0 5px rgba(247,255,165,.6)}
+.tl .f{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--acento-2)}
+.tl h3{font-size:clamp(15px,1.25vw,18px)}
+.tl p{font-size:14px;color:var(--tenue);line-height:1.4}
+
+/* ---------- inversión y mercados ---------- */
+.inv{display:grid;grid-template-columns:1fr 1fr 1.25fr;gap:clamp(12px,1.4vw,20px)}
+.inv .card{flex-direction:row;align-items:baseline;gap:14px;flex-wrap:wrap}
+.inv .pend{background:var(--lienzo);border-style:dashed}
+.mk{gap:8px}
+.mk .top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;flex-wrap:wrap}
+.mk h3{font-size:clamp(17px,1.4vw,21px)}
+.mk .kv{display:flex;flex-direction:column;gap:2px;padding-top:8px;border-top:1.5px solid var(--linea)}
+.mk .kv:first-of-type{border-top:none;padding-top:0}
+.mk .kv span{font-size:13.5px;line-height:1.4;color:var(--tenue)}
+.mk.go{border-color:var(--fondo-profundo);box-shadow:inset 0 4px 0 var(--fondo-profundo)}
+.mk.off{background:var(--lienzo);border-color:transparent}
+
+/* ---------- canales ---------- */
+.can{display:grid;grid-template-columns:1.35fr 1fr .8fr;gap:clamp(12px,1.4vw,20px);align-items:stretch}
+.adthumb{display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:center;background:var(--lienzo);border-radius:10px;padding:10px}
+.adthumb img{width:96px;height:96px;object-fit:cover;border-radius:6px}
+.adthumb p{font-size:13.5px;line-height:1.4}
+.bars{display:flex;align-items:flex-end;gap:14px;height:110px;padding-top:6px}
+.bars .b{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;height:100%;justify-content:flex-end}
+.bars .b i{display:block;width:100%;max-width:56px;background:var(--accion);border-radius:6px 6px 2px 2px}
+.bars .b.best i{background:var(--fondo-profundo);box-shadow:0 0 0 3px var(--acento-1)}
+.bars .b b{font-size:15px;font-variant-numeric:tabular-nums}
+.bars .b span{font-size:12px;color:var(--tenue)}
+.find{background:var(--acento-1);border-radius:10px;padding:12px 14px;font-size:14px;line-height:1.4}
+
+/* ---------- calidad ---------- */
+.cal{display:grid;grid-template-columns:1.05fr 1fr 1.05fr;gap:clamp(14px,1.8vw,28px);align-items:start}
+.dots{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:7px;max-width:380px}
+.dots i{aspect-ratio:1;border-radius:50%;background:var(--gris-punto);display:block}
+.dots i.li{background:var(--fondo-profundo)}
+.dots i.go{background:var(--accion)}
+.dots i.bi{background:var(--acento-2)}
+.dots i.int{background:transparent;border:2px dashed var(--tenue)}
+.leg{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--tenue)}
+.leg span{display:inline-flex;align-items:center;gap:6px}
+.leg i{width:11px;height:11px;border-radius:50%;display:inline-block;background:var(--gris-punto)}
+.leg i.li{background:var(--fondo-profundo)}.leg i.go{background:var(--accion)}.leg i.bi{background:var(--acento-2)}
+.leg i.int{background:transparent;border:2px dashed var(--tenue)}
+.kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.kpis div{display:flex;flex-direction:column;gap:4px}
+.hb{display:flex;flex-direction:column;gap:9px}
+.hb .r{display:grid;grid-template-columns:70px 1fr 48px;gap:10px;align-items:center;font-size:13.5px}
+.hb .t{height:14px;background:var(--lienzo);border-radius:7px;overflow:hidden;display:flex}
+.hb .t i{display:block;height:100%;background:var(--accion)}
+.hb .t i.s{background:var(--gris-punto)}
+.hb .r b{font-variant-numeric:tabular-nums;text-align:right}
+
+/* ---------- seguimiento ---------- */
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,1.8vw,28px);align-items:start}
+.opp{background:var(--fondo-profundo);color:var(--sobre-accion);border-radius:var(--r);padding:clamp(18px,2vw,28px);display:flex;flex-direction:column;gap:10px}
+.opp .lbl{color:var(--acento-1)}
+.names{display:flex;flex-wrap:wrap;gap:8px}
+.names span{background:var(--blanco-papel);border:1.5px solid var(--linea);border-radius:10px;padding:8px 12px;font-size:14px;line-height:1.3}
+.names span small{display:block;color:var(--tenue);font-size:12px}
+
+/* ---------- la pregunta ---------- */
+#pregunta h2{font-size:clamp(34px,4.6vw,72px);max-width:20ch;line-height:1.04}
+.opc{display:grid;grid-template-columns:1fr auto 1fr;gap:clamp(14px,2vw,32px);align-items:stretch}
+.opc .o{border-top:3px solid var(--acento-1);padding-top:16px;display:flex;flex-direction:column;gap:10px}
+.opc .o h3{font-size:clamp(20px,1.8vw,28px)}
+.opc .o ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;color:var(--tenue-osc)}
+.opc .vs{width:1px;background:rgba(255,255,255,.25);align-self:stretch}
+#tanda1 h2{font-size:clamp(26px,2.8vw,40px)}
+#tanda1 .fmtbox{padding:12px 22px}
+#tanda1 .fmtbox p{max-width:none}
+
+/* ---------- google ---------- */
+.ad{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center}
+.ad .a,.ad .d{border-radius:12px;padding:12px 16px;font-size:14.5px;line-height:1.4}
+.ad .a{background:var(--lienzo);color:var(--tenue)}
+.ad .d{background:var(--fondo-profundo);color:var(--sobre-accion)}
+.ad .arr{font-size:24px;color:var(--acento-2)}
+.gcard h3{display:flex;gap:10px;align-items:baseline}
+.gcard h3 b{font:400 italic 26px/1 var(--realce);color:var(--acento-2)}
+.gcard ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:5px;font-size:14px;line-height:1.4}
+.kw{display:flex;flex-wrap:wrap;gap:5px}
+.kw span{font-size:12.5px;background:var(--lienzo);border-radius:6px;padding:3px 8px;line-height:1.3}
+.kw.neg span{background:#FBEAEA;color:#7A2323;text-decoration:line-through;text-decoration-thickness:1.5px;text-decoration-color:rgba(122,35,35,.45)}
+
+/* ---------- linkedin ---------- */
+.cargo{gap:10px}
+.cargo .who{display:flex;align-items:center;gap:10px}
+.cargo .av{width:38px;height:38px;border-radius:50%;background:var(--fondo-profundo);color:var(--acento-1);display:grid;place-items:center;font-weight:700;font-size:13px;flex:none}
+.cargo q{font:400 italic clamp(19px,1.6vw,24px)/1.2 var(--realce);quotes:"«" "»"}
+.cargo .ang{font-size:13px;color:var(--tenue)}
+
+/* ---------- competencia ---------- */
+.stats{display:flex;gap:clamp(20px,4vw,64px);flex-wrap:wrap}
+.stats div{display:flex;flex-direction:column;gap:2px}
+.win{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(10px,1.2vw,16px)}
+.wc{display:flex;flex-direction:column;gap:8px;min-width:0}
+.wc .m{position:relative;aspect-ratio:1;border-radius:10px;overflow:hidden;background:var(--lienzo);border:1.5px solid var(--linea)}
+.wc .m img{width:100%;height:100%;object-fit:cover}
+.days{position:absolute;left:8px;top:8px;background:var(--acento-1);color:var(--texto);font-weight:700;font-size:13px;padding:4px 9px;border-radius:var(--pill);font-variant-numeric:tabular-nums;box-shadow:0 1px 4px rgba(0,0,0,.15)}
+.wc h3{font-size:14.5px}
+.wc p{font-size:13px;color:var(--tenue);line-height:1.35}
+.post{padding:14px;display:flex;flex-direction:column;gap:10px;background:var(--blanco-papel);height:100%}
+.post .pa{display:flex;gap:9px;align-items:center}
+.post .pa img,.wc .m .post .pa img,.gi .m .post .pa img{width:38px;height:38px;flex:none;border-radius:50%;object-fit:cover}
+.post .pa b{font-size:12.5px;line-height:1.2}
+.post .pa small{display:block;font-size:11px;color:var(--tenue);font-weight:400}
+.post p{font-size:clamp(11.5px,.95vw,14px);line-height:1.38;color:var(--texto)}
+.post p{overflow:hidden;flex:1;min-height:0}
+.wc .post{padding-bottom:44px}
+.wc .post p{flex:0 1 auto;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical}
+.post .days{top:auto;bottom:10px;left:12px}
+
+/* ---------- galería ---------- */
+.fil{display:flex;flex-direction:column;gap:8px}
+.fil .fg{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.fil .fg .lbl{min-width:84px}
+.fb{border:1.5px solid var(--linea);background:var(--blanco-papel);border-radius:var(--pill);padding:6px 12px;font-size:13px;font-weight:700;cursor:pointer;line-height:1.2}
+.fb:hover{border-color:var(--fondo-profundo)}
+.fb[aria-pressed="true"]{background:var(--fondo-profundo);border-color:var(--fondo-profundo);color:var(--sobre-accion)}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(178px,1fr));gap:14px}
+.gi{display:flex;flex-direction:column;gap:7px;min-width:0}
+.gi[hidden]{display:none}
+.gi .m{position:relative;aspect-ratio:1;border-radius:10px;overflow:hidden;background:#111;border:1.5px solid var(--linea)}
+.gi .m img,.gi .m video{width:100%;height:100%;object-fit:cover;background:#111}
+.gi .m.c img{object-fit:contain;background:var(--blanco-papel)}
+.gi .m .play{position:absolute;inset:0;display:grid;place-items:center;border:0;background:linear-gradient(transparent 55%,rgba(0,0,0,.45));cursor:pointer;padding:0}
+.gi .m .play span{width:56px;height:56px;border-radius:50%;background:var(--acento-1);display:grid;place-items:center;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.gi .m .play span::before{content:"";border-left:17px solid var(--texto);border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:5px}
+.gi .m .vid{position:absolute;right:8px;top:8px;background:var(--fondo-profundo);color:var(--sobre-accion);font-size:11px;font-weight:700;padding:3px 8px;border-radius:var(--pill);letter-spacing:.06em;text-transform:uppercase}
+.gi .meta{display:flex;justify-content:space-between;gap:6px;align-items:baseline}
+.gi .meta b{font-size:13.5px}
+.gi .meta span{font-size:12px;color:var(--tenue);font-variant-numeric:tabular-nums;white-space:nowrap}
+.gi p{font-size:12.5px;line-height:1.35;color:var(--tenue)}
+.gi .tag{font-size:11px;font-weight:700;color:#5B2C78}
+.empty{font-size:14px;color:var(--tenue)}
+
+/* ---------- qué significa ---------- */
+.sig{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(14px,2vw,32px);align-items:start}
+.pat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.pat .card h3{font-size:15.5px}
+.pat .card p{font-size:13.5px;color:var(--tenue);line-height:1.4}
+.hueco{background:var(--fondo-profundo);color:var(--sobre-accion);border-radius:var(--r);padding:clamp(16px,1.8vw,24px);display:flex;flex-direction:column;gap:12px}
+.hueco .lbl{color:var(--acento-1)}
+.hueco h3{font-size:clamp(17px,1.4vw,21px)}
+.hueco p{color:var(--tenue-osc);font-size:14px}
+.vs2{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:start}
+.vs2 figure{margin:0;display:flex;flex-direction:column;gap:6px}
+.vs2 img{border-radius:8px;aspect-ratio:1;object-fit:cover;width:100%}
+.vs2 figcaption{font-size:12px;color:var(--tenue);line-height:1.35}
+
+/* ---------- tanda 1 ---------- */
+.tanda{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,1.3vw,18px)}
+.pz{display:grid;grid-template-columns:1fr 72px;gap:8px 14px;align-content:start;padding:clamp(14px,1.3vw,20px)}
+.pz .hd{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.pz .n{font:400 italic 26px/1 var(--realce);color:var(--acento-2)}
+.pz q{font:700 clamp(14px,1.08vw,16.5px)/1.28 var(--display);quotes:"«" "»";letter-spacing:-.01em}
+.pz .ref{display:flex;flex-direction:column;gap:4px;align-items:stretch}
+.pz .ref img{width:72px;height:72px;object-fit:cover;border-radius:8px;border:1px solid var(--linea)}
+.pz .ref span{font-size:11px;line-height:1.25;color:var(--tenue)}
+.pz .ft{grid-column:1/-1;display:flex;flex-direction:column;gap:3px;font-size:13px;color:var(--tenue);border-top:1.5px solid var(--linea);padding-top:8px}
+.pz .ft b{color:var(--texto)}
+.pz.cond{background:var(--lienzo);border-style:dashed}
+
+/* ---------- peticiones ---------- */
+.pet{gap:14px}
+.pet .ic{width:52px;height:52px;border-radius:14px;background:var(--acento-1);display:grid;place-items:center}
+.pet .ic svg{width:26px;height:26px;stroke:var(--fondo-profundo);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.pet h3{font-size:clamp(18px,1.6vw,23px)}
+.pet p{color:var(--tenue);font-size:15px}
+.resp{margin-top:auto;padding-top:14px;border-top:1.5px dashed var(--linea);display:flex;gap:8px;align-items:baseline;font-size:13px;color:var(--tenue)}
+.resp i{flex:1;border-bottom:1.5px solid var(--linea);height:18px}
+
+/* ---------- compromisos ---------- */
+.com h3{color:var(--acento-1);font-size:clamp(18px,1.5vw,22px)}
+.com p{color:var(--tenue-osc);font-size:15px}
+.com .n{font:400 italic 40px/1 var(--realce);color:var(--sobre-accion);opacity:.9}
+
+/* ---------- próximos pasos ---------- */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,1.4vw,20px)}
+.steps li{border-top:4px solid var(--fondo-profundo);padding-top:16px;display:flex;flex-direction:column;gap:8px}
+.steps li:first-child{border-top-color:var(--acento-2)}
+.steps .f{font:400 italic clamp(26px,2.4vw,38px)/1 var(--realce);color:var(--fondo-profundo)}
+.steps .d{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--tenue)}
+.steps p{font-size:15px;line-height:1.45}
+.cierre{font:400 italic clamp(34px,4vw,60px)/1 var(--realce);color:var(--fondo-profundo)}
+
+/* ---------- navegación ---------- */
+.nav{display:none}
+.deck .nav{display:flex;position:fixed;left:0;right:0;bottom:0;height:var(--navh);z-index:20;align-items:center;gap:10px;
+  padding:0 var(--gutter-r) 0 var(--gutter-l);background:rgba(250,250,250,.94);backdrop-filter:blur(6px);border-top:1px solid var(--linea)}
+.prog{position:fixed;left:0;top:0;height:4px;background:var(--acento-2);z-index:21;width:0;transition:width .35s ease}
+.nb{border:1.5px solid var(--linea);background:var(--blanco-papel);border-radius:var(--pill);height:36px;min-width:36px;padding:0 14px;font-size:13.5px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.nb:hover{border-color:var(--fondo-profundo)}
+.nb:disabled{opacity:.4;cursor:default}
+.nav .pos{font-size:13px;color:var(--tenue);font-variant-numeric:tabular-nums;margin-left:auto}
+.nav .ttl{font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.idxbtn-m{position:fixed;right:var(--gutter-r);bottom:14px;z-index:20;box-shadow:0 4px 14px rgba(0,0,0,.14)}
+.deck .idxbtn-m{display:none}
+.idx{position:fixed;inset:0;z-index:30;background:rgba(39,36,133,.55);display:none;align-items:flex-end;justify-content:center;padding:16px var(--gutter-r) 16px var(--gutter-l)}
+.idx.open{display:flex}
+.deck .idx{align-items:center}
+.idx .pan{background:var(--fondo);border-radius:var(--r);width:100%;max-width:760px;max-height:86vh;overflow:auto;padding:22px}
+.idx .pan .hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.idx ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 16px}
+.idx a{display:flex;gap:10px;padding:8px 10px;border-radius:8px;text-decoration:none;color:var(--texto);font-size:14.5px;line-height:1.3}
+.idx a:hover,.idx a[aria-current="true"]{background:var(--lienzo)}
+.idx a span{color:var(--acento-2);font-weight:700;font-variant-numeric:tabular-nums;min-width:22px}
+
+/* ---------- modo presentación (pantalla ancha) ---------- */
+.deck body{overflow:hidden}
+.deck .slide{display:none;height:100vh;height:100svh;overflow-y:auto;border-bottom:0;padding-top:clamp(28px,5vh,60px);padding-bottom:calc(var(--navh) + clamp(20px,4vh,44px))}
+.deck .slide.on{display:flex}
+.deck .slide.on .in{animation:entra .45s cubic-bezier(.2,.7,.2,1) both}
+@keyframes entra{from{transform:translateY(14px);opacity:.35}to{transform:none;opacity:1}}
+.deck .slide.tall{justify-content:flex-start}
+
+/* ---------- apilado (móvil y pantallas estrechas) ---------- */
+@media (max-width:1100px){
+  .win{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .tanda{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .can{grid-template-columns:1fr 1fr}
+  .can > :first-child{grid-column:1/-1}
+  .cal{grid-template-columns:1fr 1fr}
+  .cal > :last-child{grid-column:1/-1}
+  .g5{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:820px){
+  .slide{padding-top:44px;padding-bottom:48px}
+  .g2,.g3,.g4,.g5,.inv,.can,.cal,.seg,.sig,.tanda,.steps,.pat{grid-template-columns:minmax(0,1fr)}
+  .can > :first-child,.cal > :last-child{grid-column:auto}
+  .win{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tl{grid-template-columns:minmax(0,1fr);gap:18px}
+  .tl::before{left:9px;right:auto;top:0;bottom:0;width:3px;height:auto}
+  .tl li{padding:0 0 0 36px}
+  .agenda{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .opc{grid-template-columns:minmax(0,1fr)}
+  .opc .vs{width:auto;height:1px;justify-self:stretch}
+  .ad{grid-template-columns:minmax(0,1fr)}
+  .ad .arr{transform:rotate(90deg);justify-self:start}
+  .gal{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .idx ol{grid-template-columns:minmax(0,1fr)}
+  .hb .r{grid-template-columns:62px 1fr 44px}
+  .fil .fg .lbl{min-width:0;width:100%}
+}
+@media (max-width:420px){
+  .win{grid-template-columns:minmax(0,1fr)}
+  .pz{grid-template-columns:1fr 64px}
+  .pz .ref img{width:64px;height:64px}
+  .dots{gap:5px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+
+<div class="prog" id="prog" aria-hidden="true"></div>
+
+<!-- 1 · PORTADA -->
+<section class="slide dark" id="portada" data-t="Portada">
+  <div class="in">
+    <p class="kicker">Triskell × Billber · Jueves 5 de noviembre de 2026</p>
+    <h1>Lo que nos han enseñado tres meses de test, y cómo lo convertimos en <em>demos</em></h1>
+    <p class="lead">Revisión de la fase de test de mercados · agosto a octubre de 2026</p>
+    <div class="agenda" aria-label="Agenda">
+      <div><b>1</b>Lo que hemos aprendido</div>
+      <div><b>2</b>La pregunta que decide los próximos meses</div>
+      <div><b>3</b>Por dónde irán Google y LinkedIn</div>
+      <div><b>4</b>Los anuncios: la gran palanca</div>
+      <div><b>5</b>Lo que necesitamos y próximos pasos</div>
+    </div>
+    <p class="hint">Avanza con <kbd>→</kbd> o <kbd>espacio</kbd> · retrocede con <kbd>←</kbd> · índice con <kbd>I</kbd></p>
+  </div>
+</section>
+
+<!-- 2 · EL ENCARGO -->
+<section class="slide" id="encargo" data-t="El encargo">
+  <div class="in">
+    <p class="eyebrow"><b>01</b>El encargo</p>
+    <h2>Nos pedisteis descubrir qué mercados <em>responden</em>. Ya tenemos respuesta.</h2>
+    <ol class="tl">
+      <li><span class="f">Julio</span><h3>Arranque</h3><p>Plan de test por país y canal.</p></li>
+      <li><span class="f">Agosto</span><h3>Ola 1: Chile y Sudáfrica</h3><p>Google, Bing y LinkedIn.</p></li>
+      <li><span class="f">Septiembre</span><h3>Ola 2: España y Portugal</h3><p>Con menos recorrido que la ola 1.</p></li>
+      <li><span class="f">24 de septiembre</span><h3>LatAm por LinkedIn</h3><p>México, Colombia, Costa Rica y Chile, con el informe de Gartner.</p></li>
+      <li><span class="f">Octubre</span><h3>Evento eMotion</h3><p>Madrid, encuentro ejecutivo.</p></li>
+      <li class="hoy"><span class="f">5 de noviembre</span><h3>Hoy</h3><p>Lo aprendido y el siguiente paso.</p></li>
+    </ol>
+    <div class="destacado">
+      <p class="lbl">Objetivo pactado</p>
+      <p style="font-size:clamp(17px,1.5vw,22px);font-weight:700;line-height:1.35">Saber dónde responde el mercado antes de escalar la inversión.</p>
+      <p class="sub">Esa fase ya nos ha dado respuestas por mercado, por canal y por tipo de anuncio. Os las enseñamos todas, con sus cifras.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3 · LO APRENDIDO POR MERCADO -->
+<section class="slide" id="aprendizajes" data-t="Lo aprendido por mercado">
+  <div class="in">
+    <p class="eyebrow"><b>02</b>Lo aprendido por mercado</p>
+    <h2>Chile y LatAm traen el <em>perfil</em> que buscáis</h2>
+    <div class="inv">
+      <div class="card"><span class="lbl" style="width:100%">LinkedIn · 1 ago → 4 nov</span><span class="big"><span class="cnt" data-to="7555">7.555</span><small>€</small></span></div>
+      <div class="card"><span class="lbl" style="width:100%">Google · 1 ago → 2 nov</span><span class="big"><span class="cnt" data-to="5810">5.810</span><small>€</small></span></div>
+      <div class="card pend"><span class="lbl" style="width:100%">Microsoft Ads (Bing)</span><span class="mid">Se incorpora al reporte</span><span class="small">Su inversión irá en el primer reporte semanal, junto a Google y LinkedIn.</span></div>
+    </div>
+    <div class="grid g5">
+      <div class="card mk go">
+        <div class="top"><h3>Chile</h3><span class="chip b">Señal clara</span></div>
+        <div class="kv"><b class="mid tab">502&nbsp;€</b><span>por conversión en LinkedIn: 6 de las 9 conversiones de la cuenta</span></div>
+        <div class="kv"><b>La única demo de publicidad</b><span>Novandino, por Google: un negocio de unos 10.000&nbsp;€</span></div>
+      </div>
+      <div class="card mk go">
+        <div class="top"><h3>LatAm</h3><span class="chip y">Mejor coste</span></div>
+        <div class="kv"><b class="mid tab">200&nbsp;€</b><span>por conversión con el informe de Gartner (México, Colombia, Costa Rica y Chile). El mejor conjunto, a 178&nbsp;€</span></div>
+        <div class="kv"><b>El perfil exacto</b><span>Davivienda (VP de Transformación), Prosa (PMO), SierraCol</span></div>
+      </div>
+      <div class="card mk">
+        <div class="top"><h3>España</h3><span class="chip o">Sin señal aún</span></div>
+        <div class="kv"><b class="tab">LinkedIn: 954&nbsp;€ · 0 conversiones</b><span>Sin contar el evento</span></div>
+        <div class="kv"><b class="tab">Google: 692&nbsp;€ · 0 conversiones</b><span>Entró en septiembre, con menos recorrido y un clic más caro</span></div>
+      </div>
+      <div class="card mk">
+        <div class="top"><h3>Portugal</h3><span class="chip o">Sin señal aún</span></div>
+        <div class="kv"><b class="tab">Google: 118&nbsp;€ · 1 contacto</b><span>Un estudiante. Sin campaña propia en LinkedIn</span></div>
+        <div class="kv"><b>Muestra pequeña</b><span>Un indicio, todavía no una conclusión</span></div>
+      </div>
+      <div class="card mk off">
+        <div class="top"><h3>Sudáfrica</h3><span class="chip p">Sale del plan</span></div>
+        <div class="kv"><b class="tab">LinkedIn: 1.623&nbsp;€ · 0 conversiones</b><span>El test más claro, aunque sea en negativo</span></div>
+        <div class="kv"><b>En búsqueda, contactos sin avance</b><span>Dos empresas pidieron demo y no pasó de ahí. Queda lejos del foco de Triskell</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · LO APRENDIDO POR CANAL -->
+<section class="slide" id="canales" data-t="Lo aprendido por canal">
+  <div class="in">
+    <p class="eyebrow"><b>03</b>Lo aprendido por canal</p>
+    <h2>El CIO responde, y quien busca Microsoft Project <em>sigue</em> ahí</h2>
+    <div class="can">
+      <div class="card">
+        <div class="row" style="justify-content:space-between"><span class="lbl">LinkedIn</span><span class="chip">45 de 47 anuncios, imagen estática</span></div>
+        <div class="row" style="align-items:baseline;gap:18px">
+          <span class="big tab"><span class="cnt" data-to="507">507</span><small>€</small></span>
+          <span class="small" style="max-width:34ch">por conversión sin el evento, el webinar ni Sudáfrica. Sin el evento ni el webinar, 688&nbsp;€.</span>
+        </div>
+        <div class="adthumb">
+          <img src="img/triskell-cio.jpg" alt="Anuncio de Triskell: ¿Acabas de asumir un nuevo cargo como CIO?" loading="lazy">
+          <p><b>Hablar a un cargo funciona.</b> «¿Acabas de asumir un nuevo cargo como CIO?»: 4 conversiones a 419&nbsp;€. Y un dolor concreto, «Trazabilidad para TI regulada», 2 a 73&nbsp;€.</p>
+        </div>
+        <p class="find"><b>Margen claro:</b> en Chile PMO solo el 3&nbsp;% de las impresiones llegó a la función Proyectos, y el 11&nbsp;% fue a Educación. Segmentar por función y cargo lo corrige.</p>
+      </div>
+      <div class="card">
+        <span class="lbl">Google</span>
+        <div class="row" style="align-items:baseline;gap:14px"><span class="big tab"><span class="cnt" data-to="5810">5.810</span><small>€</small></span><span class="small">16 conversiones a 363&nbsp;€. Hoy la conversión mezcla descargas, pruebas y estudiantes.</span></div>
+        <p style="font-size:14px"><b>Quien busca Microsoft Project sigue ahí</b> tras la retirada de Project Online. Conversiones de esas búsquedas, por mes:</p>
+        <div class="bars" role="img" aria-label="Conversiones de búsquedas de Microsoft Project: agosto 1, septiembre 4, octubre 7">
+          <div class="b"><b>1</b><i style="height:12%"></i><span>Ago</span></div>
+          <div class="b"><b>4</b><i style="height:48%"></i><span>Sep</span></div>
+          <div class="b best"><b>7</b><i style="height:84%"></i><span>Oct</span></div>
+        </div>
+        <p class="small">Octubre, el mejor mes, aunque con muchos estudiantes. Los genéricos de Chile y Sudáfrica: 2.302&nbsp;€ para 2 conversiones, y de ahí salió Novandino.</p>
+      </div>
+      <div class="card l">
+        <span class="lbl">Microsoft Ads (Bing)</span>
+        <span class="big tab"><span class="cnt" data-to="19">19</span></span>
+        <p style="font-size:14.5px">contactos en los primeros meses, con la misma estructura que Google. <b>7 con perfil de empresa y ninguna demo.</b></p>
+        <p class="small">Mismas búsquedas y los mismos estudiantes que en Google. Lo paramos para concentrar la inversión en Google y LinkedIn.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · CALIDAD -->
+<section class="slide" id="calidad" data-t="La calidad de los contactos">
+  <div class="in">
+    <p class="eyebrow"><b>04</b>La calidad de los contactos · 1 ago → 4 nov</p>
+    <h2><span class="cnt" data-to="38">38</span> contactos con huella de anuncio, <em>16</em> con perfil de empresa</h2>
+    <div class="cal">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div class="dots" role="img" aria-label="38 contactos: 4 de LinkedIn, 5 de Google y 7 de Bing con perfil de empresa; 21 estudiantes y 1 interno">
+          <i class="li"></i><i class="li"></i><i class="li"></i><i class="li"></i><i class="go"></i><i class="go"></i><i class="go"></i><i class="go"></i><i class="go"></i><i class="bi"></i>
+          <i class="bi"></i><i class="bi"></i><i class="bi"></i><i class="bi"></i><i class="bi"></i><i class="bi"></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="int"></i>
+        </div>
+        <div class="leg"><span><i class="li"></i>LinkedIn</span><span><i class="go"></i>Google</span><span><i class="bi"></i>Bing</span><span><i></i>Estudiantes</span><span><i class="int"></i>Interno</span></div>
+        <div class="kpis">
+          <div><span class="mid"><span class="cnt" data-to="16">16</span></span><span class="small">con perfil de empresa</span></div>
+          <div><span class="mid"><span class="cnt" data-to="21">21</span></span><span class="small">estudiantes</span></div>
+          <div><span class="mid">1</span><span class="small">interno</span></div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:18px">
+        <div class="hb" role="img" aria-label="Con perfil sobre total, por canal: LinkedIn 4 de 4, Google 5 de 15, Bing 7 de 19">
+          <span class="lbl">Con perfil, por canal</span>
+          <div class="r"><span>LinkedIn</span><span class="t"><i style="width:100%"></i></span><b>4/4</b></div>
+          <div class="r"><span>Google</span><span class="t"><i style="width:33.3%"></i><i class="s" style="width:66.7%"></i></span><b>5/15</b></div>
+          <div class="r"><span>Bing</span><span class="t"><i style="width:36.8%"></i><i class="s" style="width:63.2%"></i></span><b>7/19</b></div>
+        </div>
+        <div class="hb" role="img" aria-label="Con perfil sobre total, por mes: agosto 4 de 5, septiembre 5 de 11, octubre 6 de 19, noviembre 1 de 3">
+          <span class="lbl">Con perfil, por mes</span>
+          <div class="r"><span>Agosto</span><span class="t"><i style="width:21%"></i><i class="s" style="width:5.3%"></i></span><b>4/5</b></div>
+          <div class="r"><span>Septiembre</span><span class="t"><i style="width:26.3%"></i><i class="s" style="width:31.6%"></i></span><b>5/11</b></div>
+          <div class="r"><span>Octubre</span><span class="t"><i style="width:31.6%"></i><i class="s" style="width:68.4%"></i></span><b>6/19</b></div>
+          <div class="r"><span>Nov (1-4)</span><span class="t"><i style="width:5.3%"></i><i class="s" style="width:10.5%"></i></span><b>1/3</b></div>
+        </div>
+        <p class="small">Los 4 contactos de LinkedIn tienen perfil de empresa. Los estudiantes llegan por búsqueda, y en octubre fueron 12 de 19.</p>
+      </div>
+      <div class="destacado">
+        <p class="lbl">Por qué entran y cómo los filtramos</p>
+        <p style="font-size:14.5px">Microsoft Project se enseña en institutos y universidades (Duoc UC, INACAP, Wits…): el alumno busca lo mismo que el PMO que tiene que migrar. Es propio de este nicho.</p>
+        <ul class="l" style="font-size:14.5px">
+          <li><b>Negativas</b> de centros y de intención académica en Google.</li>
+          <li><b>Fuera «prueba gratuita»</b> de los anuncios de búsqueda.</li>
+          <li><b>Formularios que pidan correo de empresa</b>, con vuestro visto bueno.</li>
+          <li><b>Que Google aprenda solo</b> de los contactos con perfil.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · DE CONTACTO A DEMO -->
+<section class="slide" id="demos" data-t="De contacto a demo">
+  <div class="in">
+    <p class="eyebrow"><b>05</b>De contacto a demo</p>
+    <h2>Una demo de publicidad, y <em>margen</em> para que lleguen más</h2>
+    <div class="seg">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div class="opp">
+          <span class="lbl">La demo</span>
+          <span class="mid">Novandino · Chile</span>
+          <p style="color:var(--tenue-osc)">Llegó por la búsqueda genérica de Google en Chile. Reunión el 4 de septiembre y un negocio de unos 10.000&nbsp;€.</p>
+        </div>
+        <div class="card">
+          <span class="lbl">Además, dos peticiones de demo desde Bing en Sudáfrica</span>
+          <p style="font-size:15px">Modubeng (su CEO) e Itlhokomeleng. Se quedaron en un correo.</p>
+        </div>
+        <p class="small">Hemos revisado el origen de las 100 reuniones desde agosto, una a una (UTM, GCLID y fuente): la medición está bien, no hay demos de publicidad escondidas. Las demás demos de estos meses llegan por la web orgánica y los eventos.</p>
+      </div>
+      <div class="destacado" style="gap:14px">
+        <p class="lbl">Oportunidad de seguimiento comercial</p>
+        <p style="font-size:clamp(17px,1.4vw,21px);font-weight:700;line-height:1.3">Cinco contactos con perfil que todavía no tienen una conversación abierta</p>
+        <div class="names">
+          <span>Davivienda<small>VP de Transformación · Colombia</small></span>
+          <span>SierraCol<small>Head of Data Analytics · Colombia</small></span>
+          <span>Toyota<small>Team leader · Sudáfrica</small></span>
+          <span>Lumert<small>Manager · Chile</small></span>
+          <span>Sodexo<small>Chile</small></span>
+        </div>
+        <p style="font-size:15px">Os proponemos ayudaros: primer contacto en 24 horas con llamada, una secuencia de seguimiento y medir cada quince días cuántos contactos llegan a demo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · LA PREGUNTA -->
+<section class="slide dark" id="pregunta" data-t="La pregunta">
+  <div class="in" style="gap:clamp(24px,4.5vh,48px)">
+    <p class="eyebrow">La pregunta</p>
+    <h2>¿Seguimos <em>testeando</em> mercados, o nos centramos en lo que ya es rentable?</h2>
+    <div class="opc">
+      <div class="o">
+        <h3>Centrarnos</h3>
+        <ul>
+          <li>Chile y LatAm: lo que ya da señal.</li>
+          <li>El coste por contacto baja antes.</li>
+          <li>Aprendemos menos de otros países.</li>
+        </ul>
+      </div>
+      <span class="vs" aria-hidden="true"></span>
+      <div class="o">
+        <h3>Seguir testeando</h3>
+        <ul>
+          <li>Con lo aprendido: sin Sudáfrica y con filtros.</li>
+          <li>Cada país, con fecha y listón para decidir.</li>
+          <li>Más lento, pero con más mapa.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="small" style="font-size:15px">También se puede combinar: el grueso en lo probado y una parte acotada para explorar.</p>
+  </div>
+</section>
+
+<!-- 8 · GOOGLE -->
+<section class="slide" id="google" data-t="Google, por dónde irá">
+  <div class="in">
+    <p class="eyebrow"><b>06</b>Google, por dónde irá</p>
+    <h2>Menos campañas, y solo quien ya tiene el <em>problema</em></h2>
+    <div class="ad">
+      <div class="a"><b>Hasta ahora:</b> 10 campañas en 4 países (genéricas, soluciones, competencia y migración), aprendiendo de cualquier descarga.</div>
+      <span class="arr" aria-hidden="true">→</span>
+      <div class="d"><b>A partir de ahora:</b> una campaña por mercado, con quien busca una alternativa a Microsoft Project, y aprendiendo de la demo.</div>
+    </div>
+    <div class="grid g3">
+      <div class="card gcard">
+        <h3><b>1</b>Qué dejamos de hacer</h3>
+        <ul>
+          <li>Sudáfrica.</li>
+          <li>Búsquedas genéricas en concordancia amplia.</li>
+          <li>Campañas que no han traído contactos.</li>
+          <li>Anuncios con «prueba gratuita».</li>
+          <li>Contar una descarga como éxito.</li>
+        </ul>
+      </div>
+      <div class="card gcard">
+        <h3><b>2</b>Campañas y países</h3>
+        <ul>
+          <li><b>Chile:</b> la prioridad.</li>
+          <li><b>España:</b> prueba acotada, con fecha de revisión.</li>
+          <li><b>Portugal y otros:</b> según vuestra respuesta a la pregunta.</li>
+          <li><b>Sudáfrica:</b> fuera.</li>
+        </ul>
+      </div>
+      <div class="card gcard">
+        <h3><b>3</b>Familias de palabras</h3>
+        <span class="lbl">Microsoft Project para empresa</span>
+        <div class="kw"><span>project online</span><span>project server</span><span>ms project online</span><span>alternativas a microsoft project</span></div>
+        <span class="lbl">Categoría, acotada</span>
+        <div class="kw"><span>software de gestión de proyectos</span><span>software PPM</span><span>software PMO</span><span>herramienta de planificación de proyectos</span></div>
+      </div>
+      <div class="card gcard">
+        <h3><b>4</b>Negativas</h3>
+        <div class="kw neg"><span>duoc</span><span>inacap</span><span>aiep</span><span>universidad</span><span>instituto</span><span>estudiante</span><span>alumno</span><span>curso</span><span>tutorial</span><span>ejercicio</span><span>licencia estudiante</span><span>descargar</span><span>gratis</span><span>crack</span><span>2019 / 2021</span><span>mac</span></div>
+      </div>
+      <div class="card gcard">
+        <h3><b>5</b>La demo, como objetivo</h3>
+        <ul>
+          <li>«Demo solicitada» pasa a ser la conversión principal.</li>
+          <li>Descarga, prueba y contacto quedan como secundarias.</li>
+          <li>Google aprende de las etapas de HubSpot: de quien avanza.</li>
+        </ul>
+      </div>
+      <div class="card gcard l">
+        <h3><b>6</b>Inversión</h3>
+        <p style="font-size:14.5px">Sin presupuestos cerrados hoy. El reparto por país lo cerramos con vosotros, con vuestra respuesta a la pregunta de mercados.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9 · LINKEDIN -->
+<section class="slide" id="linkedin" data-t="LinkedIn, por dónde irá">
+  <div class="in">
+    <p class="eyebrow"><b>07</b>LinkedIn, por dónde irá</p>
+    <h2>A cada cargo, el anuncio de <em>su</em> problema</h2>
+    <p class="lead">LinkedIn permite llegar a cada persona por su cargo. El margen está más en qué le decimos que en a quién.</p>
+    <div class="grid g4">
+      <div class="card cargo"><div class="who"><span class="av">CIO</span><h3>CIO y dirección de TI</h3></div><q>La estrategia se aprueba en el comité y se pierde por el camino.</q><span class="ang">Visibilidad de cartera y valor</span></div>
+      <div class="card cargo"><div class="who"><span class="av">PMO</span><h3>Responsable de PMO</h3></div><q>Más proyectos que gente, y prioridades que cambian cada lunes.</q><span class="ang">Capacidad y planificación</span></div>
+      <div class="card cargo"><div class="who"><span class="av">CTO</span><h3>CTO y desarrollo</h3></div><q>Tus equipos viven en Jira. Tu comité, en PowerPoint.</q><span class="ang">Más que una herramienta de tareas</span></div>
+      <div class="card cargo"><div class="who"><span class="av">TX</span><h3>Transformación en banca y sector público</h3></div><q>Cada proyecto que se retrasa es regulación que llega tarde.</q><span class="ang">El sector, con sus palabras</span></div>
+    </div>
+    <div class="grid g3">
+      <div class="card l"><h3>Por función y cargo, no por intereses</h3><p class="small" style="font-size:14px">Por función, el 40&nbsp;% de las impresiones llegó a PMO y TI. Por intereses, el 3&nbsp;%.</p></div>
+      <div class="card l"><h3>En castellano</h3><p class="small" style="font-size:14px">Las 9 conversiones vienen de anuncios en castellano. Sudáfrica sale del plan.</p></div>
+      <div class="card l"><h3>La estructura, cerrada en la propuesta</h3><p class="small" style="font-size:14px">Campañas y públicos os los traemos cerrados, con vuestra respuesta a la pregunta de mercados.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · COMPETENCIA: GANADORES -->
+<section class="slide" id="competencia" data-t="Los anuncios: la competencia">
+  <div class="in">
+    <p class="eyebrow"><b>08</b>Los anuncios, la gran palanca</p>
+    <h2>Lo que la competencia lleva <em>meses</em> pagando</h2>
+    <div class="stats">
+      <div><span class="big"><span class="cnt" data-to="14">14</span></span><span class="small">competidores revisados</span></div>
+      <div><span class="big"><span class="cnt" data-to="84">84</span></span><span class="small">anuncios de software PPM</span></div>
+      <div><span class="big"><span class="cnt" data-to="112">112</span><small>días</small></span><span class="small">el anuncio más longevo</span></div>
+      <div style="max-width:38ch;justify-content:center"><p class="small" style="font-size:14px"><b style="color:var(--texto)">Criterio:</b> ganador es el que más tiempo lleva activo y más versiones tiene. Nadie mantiene tres meses un anuncio que no le funciona.</p></div>
+    </div>
+    <div class="win">
+      <div class="wc">
+        <div class="m"><div class="post">
+          <div class="pa"><img src="img/1437160213.jpg" alt=""><b>Planview<small>Publicación del CEO, promocionada</small></b></div>
+          <p>«Strategy approved. Budget committed. Teams in motion. And somewhere between the boardroom and the front lines, intent gets lost.»</p>
+          <span class="days">112 días</span>
+        </div></div>
+        <h3>Planview · La voz de un directivo</h3><p>Texto en primera persona, de directivo a directivo.</p>
+      </div>
+      <div class="wc"><div class="m"><img src="img/1435320153.jpg" alt="Meisterplan: espiral de tarjetas Prio 1 y ASAP" loading="lazy"><span class="days">105-111 días</span></div><h3>Meisterplan · Planificación reactiva</h3><p>4 versiones. Una metáfora visual, no una captura.</p></div>
+      <div class="wc"><div class="m"><img src="img/1441629483.jpg" alt="Planisware: Project Online is shutting down" loading="lazy"><span class="days">86 días</span></div><h3>Planisware · La herramienta que desaparece</h3><p>Urgencia con fecha. Desde el cierre, nadie ocupa ese espacio.</p></div>
+      <div class="wc"><div class="m"><img src="img/1540996916.jpg" alt="OnePlan: anuncio de sector salud" loading="lazy"><span class="days">84 días</span></div><h3>OnePlan · Un sector, con sus palabras</h3><p>4 versiones, activas hoy.</p></div>
+      <div class="wc"><div class="m"><img src="img/1389056486.jpg" alt="OnePlan: The PMO of Tomorrow" loading="lazy"><span class="days">81 días</span></div><h3>OnePlan · La PMO que viene</h3><p>Webinar, y relanzado.</p></div>
+      <div class="wc"><div class="m"><img src="img/1553046803_p.jpg" alt="Meisterplan: vídeo con una persona a cámara" loading="lazy"><span class="days">36-42 días</span></div><h3>Meisterplan · Clientes a cámara</h3><p>8 vídeos activos hoy. Es lo que más crece.</p></div>
+    </div>
+    <p class="small">Biblioteca pública de anuncios de LinkedIn, enero-junio y agosto-octubre de 2026. Los vídeos y el resto de anuncios, en la diapositiva siguiente.</p>
+  </div>
+</section>
+
+<!-- 11 · GALERÍA -->
+<section class="slide tall" id="galeria" data-t="Galería de la competencia">
+  <div class="in">
+    <p class="eyebrow"><b>08</b>Galería de la competencia</p>
+    <h2>Imágenes y vídeos <em>reales</em>, con sus días activos</h2>
+    <div class="fil" role="group" aria-label="Filtros de la galería">
+      <div class="fg" data-k="adv"><span class="lbl">Competidor</span>
+        <button class="fb" type="button" data-v="*" aria-pressed="true">Todos</button>
+        <button class="fb" type="button" data-v="Meisterplan" aria-pressed="false">Meisterplan</button>
+        <button class="fb" type="button" data-v="Planview" aria-pressed="false">Planview</button>
+        <button class="fb" type="button" data-v="Planisware" aria-pressed="false">Planisware</button>
+        <button class="fb" type="button" data-v="OnePlan" aria-pressed="false">OnePlan</button>
+        <button class="fb" type="button" data-v="Celoxis" aria-pressed="false">Celoxis</button>
+      </div>
+      <div class="fg" data-k="ang"><span class="lbl">Ángulo</span>
+        <button class="fb" type="button" data-v="*" aria-pressed="true">Todos</button>
+        <button class="fb" type="button" data-v="cap" aria-pressed="false">Capacidad y planificación reactiva</button>
+        <button class="fb" type="button" data-v="tar" aria-pressed="false">Más que tareas</button>
+        <button class="fb" type="button" data-v="des" aria-pressed="false">La herramienta que desaparece</button>
+        <button class="fb" type="button" data-v="est" aria-pressed="false">La estrategia se pierde</button>
+        <button class="fb" type="button" data-v="pmo" aria-pressed="false">La PMO que viene</button>
+        <button class="fb" type="button" data-v="sec" aria-pressed="false">Sector</button>
+        <button class="fb" type="button" data-v="vid" aria-pressed="false">Solo vídeos</button>
+      </div>
+    </div>
+    <div class="gal" id="gal">
+      <!-- vídeos -->
+      <div class="gi" data-adv="Meisterplan" data-ang="cap vid"><div class="m"><video preload="none" playsinline controls poster="img/1553095963_p.jpg"><source src="v/1553095963.mp4" type="video/mp4"></video><span class="vid">Vídeo</span></div><div class="meta"><b>Meisterplan</b><span>42 días</span></div><p>«Una herramienta, todo a la vista»: cliente a cámara (en alemán).</p><span class="tag">Capacidad · cliente a cámara</span></div>
+      <div class="gi" data-adv="Meisterplan" data-ang="cap vid"><div class="m"><video preload="none" playsinline controls poster="img/1553046803_p.jpg"><source src="v/1553046803.mp4" type="video/mp4"></video><span class="vid">Vídeo</span></div><div class="meta"><b>Meisterplan</b><span>41 días</span></div><p>«¿Sin visión de proyectos y carga de trabajo?» (en alemán).</p><span class="tag">Capacidad · cliente a cámara</span></div>
+      <div class="gi" data-adv="Meisterplan" data-ang="cap vid"><div class="m"><video preload="none" playsinline controls poster="img/1552947013_p.jpg"><source src="v/1552947013.mp4" type="video/mp4"></video><span class="vid">Vídeo</span></div><div class="meta"><b>Meisterplan</b><span>41 días</span></div><p>«Una única fuente de verdad para cartera y recursos» (en alemán).</p><span class="tag">Capacidad · cliente a cámara</span></div>
+      <div class="gi" data-adv="Meisterplan" data-ang="cap vid"><div class="m"><video preload="none" playsinline controls poster="img/1542672833_p.jpg"><source src="v/1542672833.mp4" type="video/mp4"></video><span class="vid">Vídeo</span></div><div class="meta"><b>Meisterplan</b><span>37 días</span></div><p>«An overview of projects and resource utilization for all stakeholders.»</p><span class="tag">Capacidad · cliente a cámara</span></div>
+      <div class="gi" data-adv="Meisterplan" data-ang="cap vid"><div class="m"><video preload="none" playsinline controls poster="img/1542702833_p.jpg"><source src="v/1542702833.mp4" type="video/mp4"></video><span class="vid">Vídeo</span></div><div class="meta"><b>Meisterplan</b><span>36 días</span></div><p>«One platform, everything at a glance.»</p><span class="tag">Capacidad · cliente a cámara</span></div>
+      <div class="gi" data-adv="Planisware" data-ang="des vid"><div class="m"><video preload="none" playsinline controls poster="img/1437008813_p.jpg"><source src="v/1437008813.mp4" type="video/mp4"></video><span class="vid">Vídeo</span></div><div class="meta"><b>Planisware</b><span>serie de 7</span></div><p>«Una migración de empresa lleva de 1 a 3 meses. Si no has empezado, ya vas tarde.» Acompaña al anuncio de 86 días.</p><span class="tag">La herramienta que desaparece</span></div>
+      <!-- imágenes -->
+      <div class="gi" data-adv="Planview" data-ang="est"><div class="m c"><div class="post"><div class="pa"><img src="img/1437160213.jpg" alt=""><b>Planview<small>CEO · Thought Leader</small></b></div><p>«Strategy approved. Budget committed. Teams in motion. And somewhere between the boardroom and the front lines, intent gets lost.»</p></div></div><div class="meta"><b>Planview</b><span>112 días</span></div><p>Publicación del CEO, con un dato de encuesta a 600 directivos.</p><span class="tag">La estrategia se pierde</span></div>
+      <div class="gi" data-adv="Meisterplan" data-ang="cap"><div class="m"><img src="img/1435173723.jpg" alt="Meisterplan, versión en alemán de la espiral" loading="lazy"></div><div class="meta"><b>Meisterplan</b><span>111 días</span></div><p>«Recupera el control de tu cartera»: la espiral de «Prio 1» y «ASAP».</p><span class="tag">Capacidad y planificación reactiva</span></div>
+      <div class="gi" data-adv="Meisterplan" data-ang="cap"><div class="m"><img src="img/1435320153.jpg" alt="Meisterplan, versión en inglés de la espiral" loading="lazy"></div><div class="meta"><b>Meisterplan</b><span>105 días</span></div><p>«A pragmatic guide for IT PMOs to escape reactive planning.»</p><span class="tag">Capacidad y planificación reactiva</span></div>
+      <div class="gi" data-adv="Meisterplan" data-ang="cap"><div class="m c"><img src="img/1558721013.jpg" alt="Meisterplan, la guía en formato documento" loading="lazy"></div><div class="meta"><b>Meisterplan</b><span>41 días</span></div><p>La misma guía, ahora como documento.</p><span class="tag">Capacidad y planificación reactiva</span></div>
+      <div class="gi" data-adv="Planisware" data-ang="des"><div class="m"><img src="img/1441629483.jpg" alt="Planisware: Project Online is shutting down" loading="lazy"></div><div class="meta"><b>Planisware</b><span>86 días</span></div><p>«Project Online is shutting down in Sept. 2026. What happens next?»</p><span class="tag">La herramienta que desaparece</span></div>
+      <div class="gi" data-adv="OnePlan" data-ang="des"><div class="m"><img src="img/1415907836.jpg" alt="OnePlan: The Final Days of Project Online" loading="lazy"></div><div class="meta"><b>OnePlan</b><span>38 días</span></div><p>«Project Online retires in September 2026. Most organizations are still deciding.»</p><span class="tag">La herramienta que desaparece</span></div>
+      <div class="gi" data-adv="OnePlan" data-ang="des"><div class="m"><img src="img/1575101176.jpg" alt="OnePlan: 3 Ways to Migrate Off Project Online" loading="lazy"></div><div class="meta"><b>OnePlan</b><span>35 días</span></div><p>Carrusel «3 ways to migrate». Activo hasta el 30-sep; después, nadie.</p><span class="tag">La herramienta que desaparece</span></div>
+      <div class="gi" data-adv="OnePlan" data-ang="sec"><div class="m"><img src="img/1540996916.jpg" alt="OnePlan: sector salud, médico con paciente" loading="lazy"></div><div class="meta"><b>OnePlan</b><span>84 días</span></div><p>«Cada retraso en el desarrollo afecta a pacientes que esperan nuevas terapias.»</p><span class="tag">Sector</span></div>
+      <div class="gi" data-adv="OnePlan" data-ang="sec"><div class="m"><img src="img/1541056746.jpg" alt="OnePlan: sector salud con captura de producto" loading="lazy"></div><div class="meta"><b>OnePlan</b><span>84 días</span></div><p>«La innovación científica no es el cuello de botella. La coordinación sí.»</p><span class="tag">Sector</span></div>
+      <div class="gi" data-adv="OnePlan" data-ang="pmo"><div class="m"><img src="img/1389056486.jpg" alt="OnePlan: The PMO of Tomorrow" loading="lazy"></div><div class="meta"><b>OnePlan</b><span>81 días</span></div><p>Webinar «The PMO of Tomorrow»: IA y gestión de cartera.</p><span class="tag">La PMO que viene</span></div>
+      <div class="gi" data-adv="Celoxis" data-ang="tar"><div class="m c"><img src="img/1440856333.jpg" alt="Celoxis: anuncio en castellano con iconos" loading="lazy"></div><div class="meta"><b>Celoxis</b><span>41 días</span></div><p>En castellano: «visibilidad en tiempo real de proyectos, capacidad y finanzas». 11 versiones.</p><span class="tag">Más que tareas</span></div>
+      <div class="gi" data-adv="Celoxis" data-ang="tar"><div class="m c"><img src="img/1441035503.jpg" alt="Celoxis: versión en inglés" loading="lazy"></div><div class="meta"><b>Celoxis</b><span>40 días</span></div><p>La misma pieza en inglés: cambian idioma y titular, el concepto se mantiene.</p><span class="tag">Más que tareas</span></div>
+      <div class="gi" data-adv="Meisterplan" data-ang="tar"><div class="m"><img src="img/1435320313.jpg" alt="Meisterplan: Jira y Meisterplan" loading="lazy"></div><div class="meta"><b>Meisterplan</b><span>35 días</span></div><p>«Jira para tus tareas, Meisterplan para tus decisiones de cartera.»</p><span class="tag">Más que tareas</span></div>
+    </div>
+    <p class="empty" id="galempty" hidden>No hay anuncios con esa combinación. Prueba con «Todos».</p>
+  </div>
+</section>
+
+<!-- 12 · QUÉ SIGNIFICA PARA TRISKELL -->
+<section class="slide" id="para-triskell" data-t="Qué significa para Triskell">
+  <div class="in">
+    <p class="eyebrow"><b>08</b>Qué significa para Triskell</p>
+    <h2>Si competimos con lo mismo, competimos a su <em>puja</em></h2>
+    <div class="sig">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div class="pat">
+          <div class="card"><h3>Lo que más dura lleva una persona</h3><p>Un directivo o un cliente a cámara, o una metáfora visual. Es lo que crece de agosto a octubre.</p></div>
+          <div class="card"><h3>Un problema, en menos de 200 caracteres</h3><p>Problema, consecuencia y oferta, con una frase grande en la pieza.</p></div>
+          <div class="card"><h3>Un concepto, muchas versiones</h3><p>Cambian idioma, formato y titular. Celoxis tiene 11; Meisterplan, 4 más 8 vídeos.</p></div>
+          <div class="card"><h3>Ninguno pide «demo» de entrada</h3><p>Ofrecen una guía, un webinar, un diagnóstico o una prueba.</p></div>
+        </div>
+        <div class="vs2">
+          <figure><img src="img/triskell-cio.jpg" alt="Anuncio actual de Triskell para CIO" loading="lazy"><figcaption><b>Triskell hoy:</b> el anuncio que más convierte ya habla a un cargo. El siguiente paso es ponerle cara y movimiento.</figcaption></figure>
+          <figure><img src="img/1435320153.jpg" alt="Anuncio de Meisterplan con metáfora visual" loading="lazy"><figcaption><b>Lo que aguanta meses:</b> una idea que se entiende sin leer, mantenida y versionada.</figcaption></figure>
+        </div>
+      </div>
+      <div class="hueco">
+        <span class="lbl">Dos huecos que nadie ocupa</span>
+        <div><h3>Vídeo de cliente en castellano</h3><p>Meisterplan lo hace en alemán e inglés. Para España y LatAm, nadie.</p></div>
+        <div><h3>«Project Online ya ha cerrado. ¿Y ahora qué?»</h3><p>Desde el 30 de septiembre, ningún competidor lo anuncia.</p></div>
+        <div style="border-top:1px solid rgba(255,255,255,.2);padding-top:12px"><h3>Y el cargo decide el ángulo</h3><p>CIO: la estrategia que se pierde · PMO: la capacidad · CTO: Jira frente a cartera · Banca y sector público: su sector.</p></div>
+        <p style="color:var(--sobre-accion);font-size:15px">Diferenciarnos nos da atención sin pagar más por ella.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 13 · TANDA 1 -->
+<section class="slide" id="tanda1" data-t="Tanda 1: seis piezas">
+  <div class="in">
+    <p class="eyebrow"><b>09</b>Tanda 1</p>
+    <h2>Seis piezas, una por cargo, listas para <em>producir</em></h2>
+    <div class="tanda">
+      <article class="card pz">
+        <div class="hd"><span class="n">1</span><span class="chip b">Vídeo de directivo</span></div>
+        <div><q>Aprobamos la estrategia en enero. En octubre, nadie en el comité sabía qué proyectos la estaban cumpliendo.</q></div>
+        <div class="ref"><img src="img/1437160213.jpg" alt="" loading="lazy"><span>Planview · 112 días</span></div>
+        <div class="ft"><span><b>Cargo:</b> CIO y dirección de TI y de transformación</span></div>
+      </article>
+      <article class="card pz">
+        <div class="hd"><span class="n">2</span><span class="chip b">Caso de éxito en vídeo</span></div>
+        <div><q>Teníamos más proyectos aprobados que gente para hacerlos, y cada lunes cambiaban las prioridades.</q></div>
+        <div class="ref"><img src="img/1542672833_p.jpg" alt="" loading="lazy"><span>Meisterplan · 8 vídeos, 36-42 días</span></div>
+        <div class="ft"><span><b>Cargo:</b> PMO y dirección de proyectos</span></div>
+      </article>
+      <article class="card pz">
+        <div class="hd"><span class="n">3</span><span class="chip y">Imagen con metáfora + carrusel</span></div>
+        <div><q>Si todo es prioridad 1, nada lo es.</q></div>
+        <div class="ref"><img src="img/1435320153.jpg" alt="" loading="lazy"><span>Meisterplan · 105-111 días, 4 versiones</span></div>
+        <div class="ft"><span><b>Cargo:</b> PMO y dirección de proyectos</span></div>
+      </article>
+      <article class="card pz">
+        <div class="hd"><span class="n">4</span><span class="chip y">Imagen y vídeo de pantalla</span></div>
+        <div><q>Tus equipos viven en Jira. Tu comité, en PowerPoint.</q></div>
+        <div class="ref"><img src="img/1435320313.jpg" alt="" loading="lazy"><span>Meisterplan · 35 días; Celoxis · 11 versiones</span></div>
+        <div class="ft"><span><b>Cargo:</b> CTO, desarrollo e ingeniería</span></div>
+      </article>
+      <article class="card pz cond">
+        <div class="hd"><span class="n">5</span><span class="chip o">Según los datos de búsqueda</span></div>
+        <div><q>30.09.2026. Project Online, retirado. Tu cartera de proyectos sigue ahí.</q></div>
+        <div class="ref"><img src="img/1441629483.jpg" alt="" loading="lazy"><span>Planisware · 86 días</span></div>
+        <div class="ft"><span><b>Cargo:</b> TI o PMO que venía de Project Online · imagen y vídeo corto</span></div>
+      </article>
+      <article class="card pz">
+        <div class="hd"><span class="n">6</span><span class="chip y">Imagen por sector</span></div>
+        <div><q>En banca, cada proyecto que se retrasa es regulación que llega tarde.</q></div>
+        <div class="ref"><img src="img/1540996916.jpg" alt="" loading="lazy"><span>OnePlan · 84 días, 4 versiones</span></div>
+        <div class="ft"><span><b>Cargo:</b> banca y, después, sector público</span></div>
+      </article>
+    </div>
+    <div class="fmtbox row" style="justify-content:space-between">
+      <p style="font-weight:700;font-size:clamp(15px,1.3vw,19px)">Os las bajamos a tierra con instrucciones hoy mismo: texto, formato, guion y qué lleva cada imagen.</p>
+      <p style="font-size:14px">Arrancan ya la 3 y la 4 · la 1 y la 2, en cuanto se grabe · la 5 o la 6, según los datos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 14 · LO QUE NECESITAMOS -->
+<section class="slide" id="necesitamos" data-t="Lo que necesitamos de vosotros">
+  <div class="in">
+    <p class="eyebrow"><b>10</b>Lo que necesitamos de vosotros</p>
+    <h2>Tres cosas vuestras para <em>diferenciarnos</em></h2>
+    <div class="grid g3">
+      <div class="card pet">
+        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></span>
+        <h3>Un usuario gratuito de la plataforma</h3>
+        <p>Para que los anuncios hablen de funciones reales, como la IA de cada módulo, y no en genérico.</p>
+        <div class="resp">Quién lo lleva <i></i></div>
+      </div>
+      <div class="card pet">
+        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3z"/></svg></span>
+        <h3>Un vídeo de un directivo o un caso de éxito</h3>
+        <p>Es el formato que más dura en la competencia. El guion lo ponemos nosotros; el presupuesto de producción os llega esta semana.</p>
+        <div class="resp">Quién lo lleva <i></i></div>
+      </div>
+      <div class="card pet">
+        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span>
+        <h3>El enlace de Gartner con licencia</h3>
+        <p>Para usar la reimpresión en anuncios, que es nuestro mejor coste en LatAm. Y la versión en castellano, si existe.</p>
+        <div class="resp">Quién lo lleva <i></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 15 · COMPROMISOS -->
+<section class="slide dark" id="compromisos" data-t="Nuestros compromisos">
+  <div class="in">
+    <p class="eyebrow">11 · Nuestros compromisos</p>
+    <h2>Desde hoy, <em>visibilidad</em> cada semana</h2>
+    <p class="lead">Os ha faltado ver la inversión y el día a día de la cuenta con regularidad. Eso cambia desde hoy.</p>
+    <div class="grid g4 com">
+      <div class="card"><span class="n">1</span><h3>Reporte semanal</h3><p>Inversión por canal y mercado, Bing incluido, contactos, coste por contacto con perfil y qué hemos cambiado.</p></div>
+      <div class="card"><span class="n">2</span><h3>Más contacto</h3><p>Una llamada cada dos semanas para revisarlo juntos, y el canal abierto para el día a día.</p></div>
+      <div class="card"><span class="n">3</span><h3>Alex, encima de la cuenta</h3><p>Se suma a Edgar en la estrategia y el seguimiento de Google y LinkedIn.</p></div>
+      <div class="card"><span class="n">4</span><h3>De contacto a demo</h3><p>Os ayudamos con el seguimiento comercial de los contactos con perfil.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 16 · PRÓXIMOS PASOS -->
+<section class="slide" id="pasos" data-t="Próximos pasos">
+  <div class="in" style="gap:clamp(22px,4vh,40px)">
+    <p class="eyebrow"><b>12</b>Próximos pasos</p>
+    <h2>Lo que viene, con <em>fechas</em></h2>
+    <ol class="steps">
+      <li><span class="d">Jueves 5-nov</span><span class="f">Hoy</span><p>Os mandamos las instrucciones de las piezas de la tanda 1.</p></li>
+      <li><span class="d">Esta semana</span><span class="f">Ya</span><p>Dejamos de invertir en Sudáfrica y en lo que no trae contactos. Presupuesto de producción de vídeo.</p></li>
+      <li><span class="d">Viernes 13-nov</span><span class="f">Primer reporte</span><p>Todo el histórico por mes, por mercado y por canal.</p></li>
+      <li><span class="d">Hacia el jueves 19-nov</span><span class="f">Nueva estrategia</span><p>Google y LinkedIn, con vuestra respuesta a la pregunta de mercados.</p></li>
+    </ol>
+    <p class="cierre">¿Os encaja?</p>
+  </div>
+</section>
+
+<!-- navegación -->
+<nav class="nav" aria-label="Navegación de diapositivas">
+  <button class="nb" type="button" id="prev" aria-label="Diapositiva anterior">←</button>
+  <button class="nb" type="button" id="next" aria-label="Diapositiva siguiente">→</button>
+  <button class="nb" type="button" id="idxbtn" aria-haspopup="dialog" aria-controls="idx">Índice</button>
+  <span class="ttl" id="ttl"></span>
+  <span class="pos" id="pos"></span>
+</nav>
+<button class="nb idxbtn-m" type="button" id="idxbtnm" aria-haspopup="dialog" aria-controls="idx">Índice</button>
+<div class="idx" id="idx" role="dialog" aria-modal="true" aria-label="Índice de diapositivas">
+  <div class="pan">
+    <div class="hd"><span class="lbl">Índice</span><button class="nb" type="button" id="idxclose" aria-label="Cerrar índice">Cerrar</button></div>
+    <ol id="idxlist"></ol>
+  </div>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var slides=[].slice.call(document.querySelectorAll('.slide'));
+  var cur=0;
+  var mq=window.matchMedia('(min-width:860px) and (min-height:540px)');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
+  var prog=document.getElementById('prog'), pos=document.getElementById('pos'), ttl=document.getElementById('ttl');
+  var prev=document.getElementById('prev'), next=document.getElementById('next');
+  var idx=document.getElementById('idx'), list=document.getElementById('idxlist');
+
+  function fmt(n){var s=String(Math.round(n));return s.replace(/\B(?=(\d{3})+(?!\d))/g,'.');}
+  function animateCounters(scope){
+    if(reduce.matches) return;
+    [].forEach.call(scope.querySelectorAll('.cnt'),function(el){
+      var to=+el.getAttribute('data-to'); if(!to) return;
+      var t0=null, dur=900;
+      function step(t){ if(!t0) t0=t; var p=Math.min(1,(t-t0)/dur); var e=1-Math.pow(1-p,3);
+        el.textContent=fmt(to*e); if(p<1) requestAnimationFrame(step); else el.textContent=fmt(to); }
+      el.textContent='0'; requestAnimationFrame(step);
+    });
+  }
+  function pauseVideos(except){
+    [].forEach.call(document.querySelectorAll('video'),function(v){ if(v!==except && !v.paused) v.pause(); });
+  }
+  slides.forEach(function(s,i){
+    var li=document.createElement('li'); var a=document.createElement('a');
+    a.href='#'+s.id; a.innerHTML='<span>'+(i+1)+'</span>'+(s.getAttribute('data-t')||s.id);
+    a.addEventListener('click',function(e){ e.preventDefault(); closeIdx(); go(i,true); });
+    li.appendChild(a); list.appendChild(li);
+  });
+  function deck(){ return mq.matches; }
+  function setMode(){
+    root.classList.toggle('deck',deck());
+    if(deck()) show(cur,false); else slides.forEach(function(s){s.classList.remove('on');});
+  }
+  function show(n,anim){
+    slides.forEach(function(s,i){ s.classList.toggle('on',i===n); });
+    var s=slides[n]; s.scrollTop=0;
+    if(anim) animateCounters(s);
+  }
+  function go(n,anim){
+    n=Math.max(0,Math.min(slides.length-1,n));
+    var changed=n!==cur; cur=n;
+    pauseVideos(null);
+    if(deck()){ show(n,anim||changed); }
+    else { slides[n].scrollIntoView({behavior:reduce.matches?'auto':'smooth',block:'start'}); }
+    prog.style.width=((n+1)/slides.length*100)+'%';
+    pos.textContent=(n+1)+' / '+slides.length;
+    ttl.textContent=slides[n].getAttribute('data-t')||'';
+    prev.disabled=n===0; next.disabled=n===slides.length-1;
+    [].forEach.call(list.querySelectorAll('a'),function(a,i){ a.setAttribute('aria-current',i===n?'true':'false'); });
+    if(location.hash!=='#'+slides[n].id){ try{ history.replaceState(null,'','#'+slides[n].id); }catch(e){} }
+  }
+  function fromHash(){
+    var h=(location.hash||'').slice(1); if(!h) return 0;
+    var m=h.match(/^slide-(\d+)$/); if(m) return (+m[1])-1;
+    for(var i=0;i<slides.length;i++) if(slides[i].id===h) return i;
+    return 0;
+  }
+  var lastFocus=null;
+  function openIdx(){ lastFocus=document.activeElement; idx.classList.add('open'); var a=list.querySelector('[aria-current="true"]')||list.querySelector('a'); if(a) a.focus(); }
+  function closeIdx(){ idx.classList.remove('open'); if(lastFocus&&lastFocus.focus) lastFocus.focus(); }
+  document.getElementById('idxbtn').addEventListener('click',openIdx);
+  document.getElementById('idxbtnm').addEventListener('click',openIdx);
+  document.getElementById('idxclose').addEventListener('click',closeIdx);
+  idx.addEventListener('click',function(e){ if(e.target===idx) closeIdx(); });
+  prev.addEventListener('click',function(){ go(cur-1,true); });
+  next.addEventListener('click',function(){ go(cur+1,true); });
+  document.addEventListener('keydown',function(e){
+    if(idx.classList.contains('open')){ if(e.key==='Escape'){ e.preventDefault(); closeIdx(); } return; }
+    var t=e.target, tag=t&&t.tagName;
+    if(tag==='VIDEO'||tag==='INPUT'||tag==='TEXTAREA') return;
+    if(e.metaKey||e.ctrlKey||e.altKey) return;
+    if(!deck()){ if(e.key==='i'||e.key==='I'){ openIdx(); } return; }
+    var k=e.key;
+    if(k==='ArrowRight'||k==='PageDown'||(k===' '&&tag!=='BUTTON')){ e.preventDefault(); go(cur+1,true); }
+    else if(k==='ArrowLeft'||k==='PageUp'){ e.preventDefault(); go(cur-1,true); }
+    else if(k==='Home'){ e.preventDefault(); go(0,true); }
+    else if(k==='End'){ e.preventDefault(); go(slides.length-1,true); }
+    else if(k==='i'||k==='I'){ e.preventDefault(); openIdx(); }
+  });
+  window.addEventListener('hashchange',function(){ go(fromHash(),true); });
+  (mq.addEventListener?mq.addEventListener('change',setMode):mq.addListener(setMode));
+
+  /* galería: filtros por competidor y ángulo */
+  var gal=document.getElementById('gal'), empty=document.getElementById('galempty');
+  var f={adv:'*',ang:'*'};
+  [].forEach.call(document.querySelectorAll('.fil .fg'),function(g){
+    var k=g.getAttribute('data-k');
+    [].forEach.call(g.querySelectorAll('.fb'),function(b){
+      b.addEventListener('click',function(){
+        f[k]=b.getAttribute('data-v');
+        [].forEach.call(g.querySelectorAll('.fb'),function(x){ x.setAttribute('aria-pressed',x===b?'true':'false'); });
+        var n=0;
+        [].forEach.call(gal.children,function(it){
+          var okA=f.adv==='*'||it.getAttribute('data-adv')===f.adv;
+          var okG=f.ang==='*'||(' '+it.getAttribute('data-ang')+' ').indexOf(' '+f.ang+' ')>-1;
+          var ok=okA&&okG; it.hidden=!ok; if(ok) n++; else { var v=it.querySelector('video'); if(v&&!v.paused) v.pause(); }
+        });
+        empty.hidden=n>0;
+      });
+    });
+  });
+  /* un solo vídeo a la vez */
+  [].forEach.call(document.querySelectorAll('video'),function(v){ v.addEventListener('play',function(){ pauseVideos(v); }); });
+
+  /* en modo apilado, el scroll actualiza la posición */
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      if(deck()) return;
+      es.forEach(function(en){ if(en.isIntersecting){ var i=slides.indexOf(en.target); if(i>-1&&i!==cur){ cur=i; prog.style.width=((i+1)/slides.length*100)+'%'; } } });
+    },{threshold:.5});
+    slides.forEach(function(s){ io.observe(s); });
+  }
+
+  cur=fromHash();
+  setMode();
+  go(cur,false);
+  if(!deck()&&cur>0) slides[cur].scrollIntoView();
+})();
+</script>
+</body></html>
